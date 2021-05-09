@@ -1,0 +1,1 @@
+export const ADD_COUNT = 'ADD_COUNT' // 改变count
