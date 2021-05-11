@@ -4,17 +4,17 @@
         <router-link to="/main/goodsDetail">点击进去商品详情</router-link>
         <button @click="addCount">点击</button>
 
-        <custom-input v-model="searchText"></custom-input>
 
-        <h4>这是input的值：{{searchText}}</h4>
+        <button @click="onClick">点击2222</button>
     </div>
 </template>
 <script>
-import CustomInput from "../components/custom-input";
+
+import { reactive, ref } from 'vue'
+
+const price = ref(1)
+
 export default {
-  components: {
-    CustomInput
-  },
   data() {
     return {
         searchText: '32323',
@@ -29,13 +29,13 @@ export default {
     }
   },
   created() {
-    // this.bus.comName = "我是首页";
+    
   },
   mounted() {},
   methods: {
     addCount() {
-      // this.$store.dispatch("increment", 10);
-    }
+      this.$store.dispatch("increment", 10);
+    },
   }
 };
 </script>

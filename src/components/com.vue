@@ -10,6 +10,12 @@ export default {
             
         }
     },
+    props:{
+        msg:{
+            type: String,
+            required: true
+        }
+    },
     methods: {
         onHandle(){
             this.$emit('no-change', {name: '我是com组件'})
