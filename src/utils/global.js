@@ -21,7 +21,7 @@ const rgodicFileName = (path, removeFileName) => {
 }
 
 const install = () => {
-    app.prototype.ergodicFileName = rgodicFileName
+    app.config.globalProperties.ergodicFileName = rgodicFileName
 }
 
 export default install

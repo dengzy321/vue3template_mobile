@@ -80,10 +80,10 @@ const wxShareAppMessage = (option, callback, errback) => {
 }
 
 const install = () => {
-    app.prototype.wxConfig = wxConfig;
-    app.prototype.wxTimelineShare = wxTimelineShare;
-    app.prototype.wxShareAppMessage = wxShareAppMessage;
-    app.prototype.wxPay = wxPay;
+    app.config.globalProperties.wxConfig = wxConfig;
+    app.config.globalProperties.wxTimelineShare = wxTimelineShare;
+    app.config.globalProperties.wxShareAppMessage = wxShareAppMessage;
+    app.config.globalProperties.wxPay = wxPay;
 }
 export default install
 

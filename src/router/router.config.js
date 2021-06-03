@@ -13,7 +13,7 @@ export const constantRouterMap = [
       {
         path: '*',
         name: '404',
-        component: () => import('@/pages/home'),
+        component: () => import('@/pages/home'),  // const UserDetails = () => import('./views/UserDetails') 实现路由懒加载
         meta: { title: '404', keepAlive: true }
       },
       {

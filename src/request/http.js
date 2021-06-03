@@ -24,8 +24,8 @@ function mapUrlObjToStrObj(urlObj){
 }
 
 const install = () => {
-  app.prototype.http = mapUrlObjToFuncObj(HTTP_URL);
-  app.prototype.URL = mapUrlObjToStrObj(HTTP_URL);
+  app.config.globalProperties.http = mapUrlObjToFuncObj(HTTP_URL);
+  app.config.globalProperties.URL = mapUrlObjToStrObj(HTTP_URL);
 }
 export default install
    
