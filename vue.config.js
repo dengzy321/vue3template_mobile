@@ -1,3 +1,8 @@
+const path = require('path')//引入path模块
+function resolve(dir) {
+    return path.join(__dirname, dir)//path.join(__dirname)设置绝对路径
+}
+
 module.exports = {
     /**
      * publicPath:
@@ -6,10 +11,12 @@ module.exports = {
      *  你就需要用这个选项指定这个子路径。例如，如果你的应用被部署在 https://www.my-app.com/my-app/，
      *  则设置 publicPath 为 /my-app/。
      * */
-    publicPath: '',
+    publicPath: '/',
     chainWebpack: (config) => {
         // 给src设置别名：@
-        config.resolve.alias.set('@', resolve('src'));
+        config.resolve.alias
+            .set('@', resolve('src')) // 配置@引入
+            .set('components', resolve('src/components'))
     },
     // 请求代理
     devServer: {

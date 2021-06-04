@@ -1,7 +1,7 @@
 <template >
     <div class="home">
         <div class="content">{{msg}} --- 挂载{{$store.state.count}}次</div>
-        <router-link to="/main/goodsDetail">点击进去商品详情</router-link>
+        <router-link to="/main/canvas">点击进去商品详情</router-link>
         <button @click="addCount">点击</button>
 
 

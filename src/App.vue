@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <!-- <router-view/> -->
-    <router-view v-slot="{ Component }">
+    <!-- 保持组件活性 -->
+    <router-view v-slot="{ Component }" v-if="$route.meta.keepAlive">
       <keep-alive>
         <component :is="Component" />
       </keep-alive>
     </router-view>
+    <!-- 不保持活性 -->
+    <router-view v-else/>
   </div>
 </template>
 
 <script>
-import { createApp } from 'vue'
 export default {
   data() {
     return {};

@@ -1,8 +1,8 @@
 export default [
     {
-        path: '/main/goodsDetail',
-        name: 'goodsDetail',
-        component: () => import('@/pages/goodsDetail'),
-        meta: { title: '商品详情', keepAlive: true }
+        path: '/main/canvas',
+        name: 'canvas',
+        component: () => import('@/pages/canvas'),
+        meta: { title: 'canvas', keepAlive: true }
     },
 ]
