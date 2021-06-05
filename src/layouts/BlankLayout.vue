@@ -1,6 +1,6 @@
 <template>
   <div class="blankLayout">
-    <div class="header">我是空白布局（实际项目删）</div>
+    <!-- <div class="header">我是空白布局（实际项目删）</div> -->
     <div class="main">
       <!-- 活性 -->
       <transition :name="switchAnimation">
