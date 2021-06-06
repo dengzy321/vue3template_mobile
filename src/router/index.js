@@ -13,11 +13,11 @@ const router = createRouter({
   }
 })
 
-router.beforeEach((to, from, next) => {
-  // ...
-  // 返回 false 以取消导航
-  // return false
-  next()
-})
+// router.beforeEach((to, from, next) => {
+//   // ...
+//   // 返回 false 以取消导航
+//   // return false
+//   next()
+// })
 
 export default router; 
