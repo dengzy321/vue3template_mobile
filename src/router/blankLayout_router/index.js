@@ -9,7 +9,6 @@ const modulesFiles = require.context('./', true, /\.js$/);
 modulesFiles.keys().map(moduleName =>{
     const name = moduleName.replace(/^\.\/(.*)\.\w+$/, "$1");
     if(name == 'index') return
-    console.log(require(''+moduleName+'').default)
     route = [ ...route, ...require(''+moduleName+'').default ]  // 同名方法名自动过滤掉
 })
 
