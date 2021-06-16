@@ -8,7 +8,9 @@ export default {
   data() {
     return {};
   },
-  created() {},
+  created() {
+    
+  },
   mounted() {
     this.drawFun();
   },
